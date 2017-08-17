@@ -1,0 +1,696 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:MMBT2222A
+LIBS:light_reactive_nodes-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-20SU U1
+U 1 1 595AACDE
+P 4100 2750
+F 0 "U1" H 4100 3267 50  0000 C CNN
+F 1 "ATTINY85-20SU" H 4100 3176 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 5050 2750 50  0001 C CIN
+F 3 "" H 4100 2750 50  0001 C CNN
+	1    4100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 595AAF36
+P 5700 3200
+F 0 "#PWR01" H 5700 2950 50  0001 C CNN
+F 1 "GND" H 5705 3027 50  0000 C CNN
+F 2 "" H 5700 3200 50  0001 C CNN
+F 3 "" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 595AAF6C
+P 5700 2350
+F 0 "#PWR02" H 5700 2200 50  0001 C CNN
+F 1 "VCC" H 5717 2523 50  0000 C CNN
+F 2 "" H 5700 2350 50  0001 C CNN
+F 3 "" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 595AB114
+P 4050 1700
+F 0 "CON1" H 4037 2065 50  0000 C CNN
+F 1 "AVR-ISP-6" H 4037 1974 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm_SMD" V 3530 1740 50  0001 C CNN
+F 3 "" H 4025 1700 50  0001 C CNN
+	1    4050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 595AB1DE
+P 4550 1950
+F 0 "#PWR03" H 4550 1700 50  0001 C CNN
+F 1 "GND" H 4555 1777 50  0000 C CNN
+F 2 "" H 4550 1950 50  0001 C CNN
+F 3 "" H 4550 1950 50  0001 C CNN
+	1    4550 1950
+	1    0    0    -1  
+$EndComp
+Text Label 2100 2600 0    60   ~ 0
+MISO
+Text Label 3350 1600 0    60   ~ 0
+MISO
+Text Label 4550 1700 0    60   ~ 0
+MOSI
+$Comp
+L VCC #PWR04
+U 1 1 595AB2DC
+P 4550 1400
+F 0 "#PWR04" H 4550 1250 50  0001 C CNN
+F 1 "VCC" H 4567 1573 50  0000 C CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	1    0    0    -1  
+$EndComp
+Text Label 3350 1700 0    60   ~ 0
+SCK
+Text Label 3350 1800 0    60   ~ 0
+RST
+Text Label 2100 3000 0    60   ~ 0
+RST
+Text Label 2100 2700 0    60   ~ 0
+SCK
+Text Label 2100 2500 0    60   ~ 0
+MOSI
+Text Label 2000 2500 1    60   ~ 0
+PB0
+Text Label 1900 2600 1    60   ~ 0
+PB1
+Text Label 1800 2700 1    60   ~ 0
+PB2
+Text Label 1500 5500 0    60   ~ 0
+PB0
+$Comp
+L LDR03 R1
+U 1 1 595ACA85
+P 2050 5100
+F 0 "R1" H 2120 5146 50  0000 L CNN
+F 1 "LDR03" H 2120 5055 50  0000 L CNN
+F 2 "Opto-Devices:Resistor_LDR_5.1x4.3_RM3.4" V 2225 5100 50  0001 C CNN
+F 3 "" H 2050 5050 50  0001 C CNN
+	1    2050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 595ACAE2
+P 2050 4800
+F 0 "#PWR05" H 2050 4650 50  0001 C CNN
+F 1 "VCC" H 2067 4973 50  0000 C CNN
+F 2 "" H 2050 4800 50  0001 C CNN
+F 3 "" H 2050 4800 50  0001 C CNN
+	1    2050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 595ACB2A
+P 2050 5850
+F 0 "R2" H 2120 5896 50  0000 L CNN
+F 1 "10k" H 2120 5805 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 1980 5850 50  0001 C CNN
+F 3 "" H 2050 5850 50  0001 C CNN
+	1    2050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 595ACC3F
+P 2050 6200
+F 0 "#PWR06" H 2050 5950 50  0001 C CNN
+F 1 "GND" H 2055 6027 50  0000 C CNN
+F 2 "" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	1    0    0    -1  
+$EndComp
+Text Notes 2300 5600 0    60   ~ 0
+Senses light through\nLDR on PB0
+Text Label 7050 3150 0    60   ~ 0
+PB3
+$Comp
+L VCC #PWR07
+U 1 1 595ACEDA
+P 8050 1250
+F 0 "#PWR07" H 8050 1100 50  0001 C CNN
+F 1 "VCC" H 8067 1423 50  0000 C CNN
+F 2 "" H 8050 1250 50  0001 C CNN
+F 3 "" H 8050 1250 50  0001 C CNN
+	1    8050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 595AD12C
+P 7500 3150
+F 0 "R7" V 7293 3150 50  0000 C CNN
+F 1 "10k" V 7384 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7430 3150 50  0001 C CNN
+F 3 "" H 7500 3150 50  0001 C CNN
+	1    7500 3150
+	0    1    1    0   
+$EndComp
+Text Notes 8400 1850 0    60   ~ 0
+I need to figure out how to get 3v to this\npoint because the vibration motors run on it.\n
+Text Notes 8400 2000 0    60   ~ 0
+or, we just throw a resistor in here and be sad for now\n
+Text Notes 8400 2150 0    60   ~ 0
+or, we have a separate 3v voltage source\n
+$Comp
+L Motor_DC M1
+U 1 1 595ADE54
+P 8050 2350
+F 0 "M1" H 8208 2346 50  0000 L CNN
+F 1 "Vibration Motor" H 8208 2255 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8050 2260 50  0001 C CNN
+F 3 "" H 8050 2260 50  0001 C CNN
+	1    8050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 595AE41C
+P 8050 3550
+F 0 "#PWR08" H 8050 3300 50  0001 C CNN
+F 1 "GND" H 8055 3377 50  0000 C CNN
+F 2 "" H 8050 3550 50  0001 C CNN
+F 3 "" H 8050 3550 50  0001 C CNN
+	1    8050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 595AE4A9
+P 7550 2400
+F 0 "D1" V 7504 2528 50  0000 L CNN
+F 1 "DIODE" V 7595 2528 50  0000 L CNN
+F 2 "Diodes_SMD:D_0805" H 7550 2400 50  0001 C CNN
+F 3 "" H 7550 2400 50  0001 C CNN
+	1    7550 2400
+	0    1    1    0   
+$EndComp
+Text Label 8600 5550 0    60   ~ 0
+PB2
+Text Label 1700 2800 1    60   ~ 0
+PB3
+Text Label 6200 5250 0    60   ~ 0
+PB1
+$Comp
+L R R6
+U 1 1 595B3361
+P 6800 5650
+F 0 "R6" H 6870 5696 50  0000 L CNN
+F 1 "10k" H 6870 5605 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 6730 5650 50  0001 C CNN
+F 3 "" H 6800 5650 50  0001 C CNN
+	1    6800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 595B3462
+P 6800 4200
+F 0 "#PWR09" H 6800 4050 50  0001 C CNN
+F 1 "VCC" H 6817 4373 50  0000 C CNN
+F 2 "" H 6800 4200 50  0001 C CNN
+F 3 "" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 595B3601
+P 6800 6000
+F 0 "#PWR010" H 6800 5750 50  0001 C CNN
+F 1 "GND" H 6805 5827 50  0000 C CNN
+F 2 "" H 6800 6000 50  0001 C CNN
+F 3 "" H 6800 6000 50  0001 C CNN
+	1    6800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DIP_x01 SW1
+U 1 1 595B382A
+P 6800 4700
+F 0 "SW1" V 6754 4830 50  0000 L CNN
+F 1 "SW_DIP_x01" V 6845 4830 50  0000 L CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_SKQG" H 6800 4700 50  0001 C CNN
+F 3 "" H 6800 4700 50  0001 C CNN
+	1    6800 4700
+	0    1    1    0   
+$EndComp
+Text Notes 8250 3450 0    60   ~ 0
+turns off and on vibration motor over PB3
+Text Notes 8500 5250 0    60   ~ 0
+controls LED over PB2
+Text Notes 6950 5250 0    60   ~ 0
+Senses switch over PB1
+Text Label 1600 2900 1    60   ~ 0
+PB4
+Text Label 3700 5500 0    60   ~ 0
+PB4
+$Comp
+L R R4
+U 1 1 59619264
+P 4200 5500
+F 0 "R4" V 3993 5500 50  0000 C CNN
+F 1 "10k" V 4084 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4130 5500 50  0001 C CNN
+F 3 "" H 4200 5500 50  0001 C CNN
+	1    4200 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 59619271
+P 4900 3900
+F 0 "#PWR011" H 4900 3750 50  0001 C CNN
+F 1 "VCC" H 4917 4073 50  0000 C CNN
+F 2 "" H 4900 3900 50  0001 C CNN
+F 3 "" H 4900 3900 50  0001 C CNN
+	1    4900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 59619277
+P 4900 4400
+F 0 "R5" H 4970 4446 50  0000 L CNN
+F 1 "220" H 4970 4355 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 4830 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5961927D
+P 4900 4900
+F 0 "D3" V 4938 4783 50  0000 R CNN
+F 1 "LED" V 4847 4783 50  0000 R CNN
+F 2 "LEDs:LED_1206" H 4900 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59619283
+P 4900 5950
+F 0 "#PWR012" H 4900 5700 50  0001 C CNN
+F 1 "GND" H 4905 5777 50  0000 C CNN
+F 2 "" H 4900 5950 50  0001 C CNN
+F 3 "" H 4900 5950 50  0001 C CNN
+	1    4900 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 5200 0    60   ~ 0
+controls LED over PB4
+$Comp
+L CONN_01X02_FEMALE J1
+U 1 1 5961F02F
+P 1800 1450
+F 0 "J1" H 1819 1125 50  0000 C CNN
+F 1 "CONN_01X02_FEMALE" H 1819 1216 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1800 1550 50  0001 C CNN
+F 3 "" H 1800 1550 50  0001 C CNN
+	1    1800 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5961F53F
+P 2050 1700
+F 0 "#PWR013" H 2050 1450 50  0001 C CNN
+F 1 "GND" H 2055 1527 50  0000 C CNN
+F 2 "" H 2050 1700 50  0001 C CNN
+F 3 "" H 2050 1700 50  0001 C CNN
+	1    2050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 5961F643
+P 2050 1150
+F 0 "#PWR014" H 2050 1000 50  0001 C CNN
+F 1 "VCC" H 2067 1323 50  0000 C CNN
+F 2 "" H 2050 1150 50  0001 C CNN
+F 3 "" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5973593A
+P 5700 2750
+F 0 "C1" H 5815 2796 50  0000 L CNN
+F 1 "C" H 5815 2705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 5738 2600 50  0001 C CNN
+F 3 "" H 5700 2750 50  0001 C CNN
+	1    5700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 59739BED
+P 9100 5550
+F 0 "R8" V 8893 5550 50  0000 C CNN
+F 1 "10k" V 8984 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9030 5550 50  0001 C CNN
+F 3 "" H 9100 5550 50  0001 C CNN
+	1    9100 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 59739BF9
+P 9800 3950
+F 0 "#PWR015" H 9800 3800 50  0001 C CNN
+F 1 "VCC" H 9817 4123 50  0000 C CNN
+F 2 "" H 9800 3950 50  0001 C CNN
+F 3 "" H 9800 3950 50  0001 C CNN
+	1    9800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 59739BFF
+P 9800 4450
+F 0 "R9" H 9870 4496 50  0000 L CNN
+F 1 "220" H 9870 4405 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 9730 4450 50  0001 C CNN
+F 3 "" H 9800 4450 50  0001 C CNN
+	1    9800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 59739C05
+P 9800 4950
+F 0 "D2" V 9838 4833 50  0000 R CNN
+F 1 "LED" V 9747 4833 50  0000 R CNN
+F 2 "LEDs:LED_1206" H 9800 4950 50  0001 C CNN
+F 3 "" H 9800 4950 50  0001 C CNN
+	1    9800 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 59739C0B
+P 9800 6000
+F 0 "#PWR016" H 9800 5750 50  0001 C CNN
+F 1 "GND" H 9805 5827 50  0000 C CNN
+F 2 "" H 9800 6000 50  0001 C CNN
+F 3 "" H 9800 6000 50  0001 C CNN
+	1    9800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT2222A Q1
+U 1 1 5992690D
+P 4800 5500
+F 0 "Q1" H 4941 5546 50  0000 L CNN
+F 1 "MMBT2222A" H 4941 5455 50  0000 L CNN
+F 2 "MMBT2222A:SOT23" H 4800 5500 50  0001 L BNN
+F 3 "MMBT2222A." H 4800 5500 50  0001 L BNN
+F 4 "Unavailable" H 4800 5500 50  0001 L BNN "Availability"
+F 5 "Fairchild Semiconductor" H 4800 5500 50  0001 L BNN "MF"
+F 6 "SOT-23 Fairchild Semiconductor" H 4800 5500 50  0001 L BNN "Package"
+F 7 "MMBT2222 Series 40 V CE Breakdown 1 A NPN General Purpose Amplifier - SOT-23" H 4800 5500 50  0001 L BNN "Description"
+F 8 "None" H 4800 5500 50  0001 L BNN "Price"
+	1    4800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT2222A Q3
+U 1 1 59926B6B
+P 9700 5550
+F 0 "Q3" H 9841 5596 50  0000 L CNN
+F 1 "MMBT2222A" H 9841 5505 50  0000 L CNN
+F 2 "MMBT2222A:SOT23" H 9700 5550 50  0001 L BNN
+F 3 "MMBT2222A." H 9700 5550 50  0001 L BNN
+F 4 "Unavailable" H 9700 5550 50  0001 L BNN "Availability"
+F 5 "Fairchild Semiconductor" H 9700 5550 50  0001 L BNN "MF"
+F 6 "SOT-23 Fairchild Semiconductor" H 9700 5550 50  0001 L BNN "Package"
+F 7 "MMBT2222 Series 40 V CE Breakdown 1 A NPN General Purpose Amplifier - SOT-23" H 9700 5550 50  0001 L BNN "Description"
+F 8 "None" H 9700 5550 50  0001 L BNN "Price"
+	1    9700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT2222A Q2
+U 1 1 59926C03
+P 7950 3150
+F 0 "Q2" H 8091 3196 50  0000 L CNN
+F 1 "MMBT2222A" H 8091 3105 50  0000 L CNN
+F 2 "MMBT2222A:SOT23" H 7950 3150 50  0001 L BNN
+F 3 "MMBT2222A." H 7950 3150 50  0001 L BNN
+F 4 "Unavailable" H 7950 3150 50  0001 L BNN "Availability"
+F 5 "Fairchild Semiconductor" H 7950 3150 50  0001 L BNN "MF"
+F 6 "SOT-23 Fairchild Semiconductor" H 7950 3150 50  0001 L BNN "Package"
+F 7 "MMBT2222 Series 40 V CE Breakdown 1 A NPN General Purpose Amplifier - SOT-23" H 7950 3150 50  0001 L BNN "Description"
+F 8 "None" H 7950 3150 50  0001 L BNN "Price"
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3000 5700 3000
+Wire Wire Line
+	5700 2900 5700 3200
+Wire Wire Line
+	5450 2500 5700 2500
+Wire Wire Line
+	5700 2350 5700 2600
+Wire Wire Line
+	4150 1800 4550 1800
+Wire Wire Line
+	4550 1800 4550 1950
+Wire Wire Line
+	1900 2600 2750 2600
+Wire Wire Line
+	3900 1600 3350 1600
+Wire Wire Line
+	4150 1700 4550 1700
+Wire Wire Line
+	4150 1600 4550 1600
+Wire Wire Line
+	4550 1600 4550 1400
+Wire Wire Line
+	3350 1700 3900 1700
+Wire Wire Line
+	3350 1800 3900 1800
+Wire Wire Line
+	1800 2700 2750 2700
+Wire Wire Line
+	2000 2500 2750 2500
+Wire Wire Line
+	1500 5500 2050 5500
+Wire Wire Line
+	2050 5250 2050 5700
+Wire Wire Line
+	2050 4800 2050 4950
+Connection ~ 2050 5500
+Wire Wire Line
+	2050 6000 2050 6200
+Wire Wire Line
+	7050 3150 7350 3150
+Wire Wire Line
+	7650 3150 7850 3150
+Wire Wire Line
+	8050 2650 8050 2950
+Wire Wire Line
+	8050 1850 8050 2150
+Wire Wire Line
+	7550 2200 7550 2050
+Wire Wire Line
+	7550 2050 8050 2050
+Connection ~ 8050 2050
+Wire Wire Line
+	8050 2750 7550 2750
+Wire Wire Line
+	7550 2750 7550 2600
+Connection ~ 8050 2750
+Wire Wire Line
+	1700 2800 2750 2800
+Wire Wire Line
+	6200 5250 6800 5250
+Wire Wire Line
+	6800 5000 6800 5500
+Connection ~ 6800 5250
+Wire Wire Line
+	6800 5800 6800 6000
+Wire Wire Line
+	6800 4200 6800 4400
+Wire Wire Line
+	1600 2900 2750 2900
+Wire Wire Line
+	3700 5500 4050 5500
+Wire Wire Line
+	4350 5500 4700 5500
+Wire Wire Line
+	4900 4550 4900 4750
+Wire Wire Line
+	1900 1550 2050 1550
+Wire Wire Line
+	2050 1550 2050 1700
+Wire Wire Line
+	1900 1350 2050 1350
+Wire Wire Line
+	2050 1350 2050 1150
+Connection ~ 5700 2500
+Connection ~ 5700 3000
+Wire Wire Line
+	4900 5700 4900 5950
+Wire Wire Line
+	4900 5050 4900 5300
+Wire Wire Line
+	4900 3900 4900 4250
+Wire Wire Line
+	8600 5550 8950 5550
+Wire Wire Line
+	9250 5550 9600 5550
+Wire Wire Line
+	9800 4600 9800 4800
+Wire Wire Line
+	9800 5750 9800 6000
+Wire Wire Line
+	9800 5100 9800 5350
+Wire Wire Line
+	9800 3950 9800 4300
+Wire Wire Line
+	8050 3350 8050 3550
+Wire Wire Line
+	2750 3000 2100 3000
+$Comp
+L R R3
+U 1 1 599514E9
+P 8050 1700
+F 0 "R3" H 8120 1746 50  0000 L CNN
+F 1 "220" H 8120 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" V 7980 1700 50  0001 C CNN
+F 3 "" H 8050 1700 50  0001 C CNN
+	1    8050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1250 8050 1550
+$EndSCHEMATC
